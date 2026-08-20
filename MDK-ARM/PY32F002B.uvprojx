@@ -16,8 +16,8 @@
         <TargetCommonOption>
           <Device>PY32F002Bx5</Device>
           <Vendor>Puya</Vendor>
-          <PackID>Puya.PY32F0xx_DFP.1.2.19</PackID>
-          <PackURL>https://www.puyasemi.com/uploadfiles/</PackURL>
+          <PackID>Puya.PY32F0xx_DFP.1.2.0</PackID>
+          <PackURL>http://www.puyasemi.com/uploadfiles/</PackURL>
           <Cpu>IRAM(0x20000000,0x00000C00) IROM(0x08000000,0x00006000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,PY32F002Bx5</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Driver\Inc;..\Components\Inc;..\User</IncludePath>
+              <IncludePath>..\Driver\Inc;..\Components\Inc;..\User;..\Components</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -586,6 +586,11 @@
               <FileName>py32f002bxx_Start_Kit.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Components\Src\py32f002bxx_Start_Kit.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Components\Src\uart_hal.c</FilePath>
             </File>
           </Files>
         </Group>
