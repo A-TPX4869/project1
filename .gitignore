@@ -53,3 +53,19 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+.DS_Store
+**/Listings/*
+**/Objects/*
+**/Output/*
+**/RTE/*
+*.uvgui.*
+*.uvguix.*
+*.dbgconf
+JLinkLog.txt
+*.scvd
+JLinkLog.txt
+JLinkSettings.ini
+
+.vs/
+.vscode/
